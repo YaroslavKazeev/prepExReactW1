@@ -23,3 +23,5 @@ I created the variant with the props, but I did not like it because the logic be
 I added an additional check to the handleIncrement function.
 
 - What would you need to change to also have a button that adds 2 and one that removes 2? Will that create a problem with your logic for never going below 0?
+
+Everything works just fine.

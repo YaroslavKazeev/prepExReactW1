@@ -16,6 +16,32 @@ function Button3({ handleClick2 }) {
   return <button onClick={() => handleClick2("-")}>Subtract 1!</button>;
 }
 
+function Button4({ handleClick2 }) {
+  return (
+    <button
+      onClick={() => {
+        handleClick2("+");
+        handleClick2("+");
+      }}
+    >
+      Add 2!
+    </button>
+  );
+}
+
+function Button5({ handleClick2 }) {
+  return (
+    <button
+      onClick={() => {
+        handleClick2("-");
+        handleClick2("-");
+      }}
+    >
+      Subtract 2!
+    </button>
+  );
+}
+
 function Counter() {
   const [count, setCount] = useState(0);
   const feedback = count > 10 ? "It's higher than 10!" : "Keep counting...";
@@ -40,6 +66,8 @@ function Counter() {
       <Button handleClick={handleIncrement} />
       <Button2 handleClick2={handleIncrement2} />
       <Button3 handleClick2={handleIncrement2} />
+      <Button4 handleClick2={handleIncrement2} />
+      <Button5 handleClick2={handleIncrement2} />
     </>
   );
 }
