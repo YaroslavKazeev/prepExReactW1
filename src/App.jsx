@@ -27,7 +27,8 @@ function Counter() {
   function handleIncrement2(sign) {
     if (sign === "+") {
       setCount((prevCount) => prevCount + 1);
-    } else {
+    }
+    if (sign === "-" && count > 0) {
       setCount((prevCount) => prevCount - 1);
     }
   }

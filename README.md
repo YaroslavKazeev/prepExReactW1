@@ -19,4 +19,7 @@ Building this little App should be straightforward, now let's get those _brain j
 I created the variant with the props, but I did not like it because the logic became spread out across several functions. I think creating two functions, or the increment handler function with the if-else decision, is the way to go. I added that variant to the existing code.
 
 - Once you can decrement as well, how would you implement it never going below 0?
+
+I added an additional check to the handleIncrement function.
+
 - What would you need to change to also have a button that adds 2 and one that removes 2? Will that create a problem with your logic for never going below 0?
